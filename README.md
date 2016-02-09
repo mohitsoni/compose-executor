@@ -1,5 +1,7 @@
 # compose-executor
 
+*Project development has moved to: [https://github.com/mesos/docker-compose-executor](https://github.com/mesos/docker-compose-executor).*
+
 compose-executor project aims to enable Mesos frameworks to launch a pod of docker containers. Kubernetes/K8 introduced the notion of a collection of docker containers that share namespaces and treat the collection as a single scaling unit. Brendan Burns talked about some design patterns/use cases for pods in [DockerCon'15](https://www.youtube.com/watch?v=Ph3t8jIt894).
 
 Docker Compose is a cherished tool used in docker community that helps us model a collection of docker containers. The specification is very flexible: containers can be launched both in multiple hosts or a single host. Furthermore, you can also model a pod collapsing namespaces (net, IPC supported in docker, PID support coming). The spec is also gaining popularity in 3rd party platforms/IDE like Azure (baked in Visual Studio support). AWS also added support behind it since DockerCon'15.
